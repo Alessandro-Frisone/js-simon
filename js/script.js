@@ -6,17 +6,12 @@ const num5Elm = document.getElementById("num5")
 const confirmElm = document.getElementById("confirm")
 const outputElm = document.getElementById("output")
 
-// Funzione per generare numeri casuali
-function generateRandomNumbers(min, max) {
+// Funzione per generare 5 numeri casuali
+function generateRandomNumbers() {
     const numbers = [];
-    while (numbers.length < count) {
-      const num = Math.floor(Math.random() * (max - min + 1)) + min;
-      if (!numbers.includes(num)) {
-        numbers.push(num);
-      }
+    for (let i = 0; i < 5; i++) {
+      numbers.push(Math.floor(Math.random() * 100) + 1); 
     }
     return numbers;
   }
-//  Mostra i numeri casuali in pagina
-const randomNumbers = generateRandomNumbers(5, 1, 100);
-randomNumbersElement.textContent = randomNumbers.join(", ");
+  console.log(numbers);
