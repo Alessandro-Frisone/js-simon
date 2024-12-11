@@ -6,6 +6,12 @@ const num5Elm = document.getElementById("num5")
 const confirmElm = document.getElementById("confirm")
 const outputElm = document.getElementById("output")
 const randomNumberOutputElm = document.getElementById("randomNumberOutput")
+const boxNumbersElm = document.getElementById("boxNumbers")
+const inputUser1Elm = document.getElementById("inputUser1")
+const inputUser2Elm = document.getElementById("inputUser2")
+const inputUser3Elm = document.getElementById("inputUser3")
+const inputUser4Elm = document.getElementById("inputUser4")
+const inputUser5Elm = document.getElementById("inputUser5")
 
 
 // Funzione per generare 5 numeri casuali
@@ -21,6 +27,10 @@ function generateRandomNumbers() {
   randomNumberOutputElm.innerHTML = newNumbers;
 // Creazione timer (20 secondi)
 setTimeout(() => {
-  const finalNumbers = randomNumberOutputElm.classList.add("hidden")
-  const userNumbers = num1Elm.classList.remove("hidden")
+  randomNumberOutputElm.classList.add("hidden")
+  inputUser1Elm.classList.remove("hidden")
+  inputUser2Elm.classList.remove("hidden")
+  inputUser3Elm.classList.remove("hidden")
+  inputUser4Elm.classList.remove("hidden")
+  inputUser5Elm.classList.remove("hidden")
 }, 5000);
