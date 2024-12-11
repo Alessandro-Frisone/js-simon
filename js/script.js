@@ -25,7 +25,7 @@ function generateRandomNumbers() {
   }
   const newNumbers = generateRandomNumbers();
 // Stampa dei numeri randomici a schermo
-  randomNumberOutputElm.innerHTML = newNumbers;
+  randomNumberOutputElm.innerHTML = newNumbers.join(" - ");
 // Creazione timer (20 secondi) con comparsa input type e scomparsa numeri random
 let timeLeft = 5
 const timeInterval = setInterval(() => {
