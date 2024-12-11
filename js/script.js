@@ -24,7 +24,7 @@ function generateRandomNumbers() {
     return numbers;
   }
   const newNumbers = generateRandomNumbers();
-  // Stampa dei numeri randomici a schermo
+// Stampa dei numeri randomici a schermo
   randomNumberOutputElm.innerHTML = newNumbers;
 // Creazione timer (20 secondi) con comparsa input type e scomparsa numeri random
 let timeLeft = 5
@@ -43,3 +43,29 @@ const timeInterval = setInterval(() => {
     timeLeft--
   }
 }, 1000);
+
+
+// Funzione che controlla se i numeri inseriti equivalgono a quelli generati 
+confirmElm.addEventListener('click', () => {
+  const userNumbers = [
+      document.getElementById('num1').value,
+      document.getElementById('num2').value,
+      document.getElementById('num3').value,
+      document.getElementById('num4').value,
+      document.getElementById('num5').value,
+  ];
+
+
+// Array per memorizzare i numeri corretti
+const correctNumbers = [];
+for (let i = 0; i < newNumbers.length; i++) {
+if (userNumbers.includes(newNumbers[i].toString())) {
+  correctNumbers.push(newNumbers[i]);
+}
+}
+
+
+// Mostra il risultato
+outputElm.innerHTML = `Hai indovinato ${correctNumbers.length} numeri: ${correctNumbers.join(" - ")}`;
+});
+ 
