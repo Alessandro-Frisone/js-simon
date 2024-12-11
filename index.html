@@ -13,24 +13,25 @@
 <body class="bg-primary">
     <main>
         <div class="container bg-light text-center p-4">
-            <div class="mb-4">Inserisci tutti i numeri che ricordi (l'ordine non è importante)</div>
-                <div class="row">
-                    <div class="col">
-                        <input type="number" id="num1">
+            <div class="mb-4 text-uppercase">Inserisci tutti i numeri che ricordi (l'ordine non è importante)</div>
+                <div id="randomNumberOutput"></div>
+                    <div class="row">
+                        <div class="col hidden">
+                            <input type="number" id="num1">
+                        </div>
+                        <div class="col hidden">
+                            <input type="number" id="num2">
+                        </div>
+                        <div class="col hidden">
+                            <input type="number" id="num3">
+                        </div>
+                        <div class="col hidden">
+                            <input type="number" id="num4">
+                        </div>
+                        <div class="col hidden">
+                            <input type="number" id="num5">
+                        </div>
                     </div>
-                    <div class="col">
-                        <input type="number" id="num2">
-                    </div>
-                    <div class="col">
-                        <input type="number" id="num3">
-                    </div>
-                    <div class="col">
-                        <input type="number" id="num4">
-                    </div>
-                    <div class="col">
-                        <input type="number" id="num5">
-                    </div>
-                </div>
             <button type="button" class="btn btn-primary mt-4" id="confirm">Conferma</button>
             <div id="output"></div>
         </div>
