@@ -14,4 +14,4 @@ function generateRandomNumbers() {
     }
     return numbers;
   }
-  console.log(numbers);
+  const newNumbers = generateRandomNumbers();
