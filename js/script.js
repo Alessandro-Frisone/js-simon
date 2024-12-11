@@ -13,6 +13,8 @@ const inputUser2Elm = document.getElementById("inputUser2")
 const inputUser3Elm = document.getElementById("inputUser3")
 const inputUser4Elm = document.getElementById("inputUser4")
 const inputUser5Elm = document.getElementById("inputUser5")
+const secondStringElm = document.getElementById("secondString")
+const primaryStringElm = document.getElementById("primaryString")
 
 
 // Funzione per generare 5 numeri casuali
@@ -38,6 +40,8 @@ const timeInterval = setInterval(() => {
     inputUser4Elm.classList.remove("hidden")
     inputUser5Elm.classList.remove("hidden")
     timerElm.classList.add("hidden")
+    secondStringElm.classList.remove("hidden")
+    primaryStringElm.classList.add("hidden")
   } else {
     timerElm.innerHTML = timeLeft
     timeLeft--
